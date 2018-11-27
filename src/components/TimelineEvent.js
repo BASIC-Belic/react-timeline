@@ -11,10 +11,10 @@ const TimelineEvent = (props) => {
 
   // Fill in your code here
   return (
-    <section>
-      <li>{props.person}</li>
-      <li>{props.status}</li>
-      <li>{<Timestamp time={props.thisTime}/>}</li>
+    <section className="timeline-event">
+      <div className="event-person">{props.person}</div>
+      <div className="event-status">{props.status}</div>
+      <div className="event-time">{<Timestamp time={props.thisTime}/>}</div>
     </section>
   )
 }

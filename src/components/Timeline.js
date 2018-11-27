@@ -10,9 +10,9 @@ const Timeline = (props) => {
   });
 
   return (
-    <div>
+    <section className="timeline">
       {parseData}
-    </div>
+    </section>
   );
 }
 
