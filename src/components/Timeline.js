@@ -9,10 +9,9 @@ class Timeline extends React.Component {
     super(props);
   }
   getEventsData() {
-    const eventsData = this.props.events.map( (event, i) => {
+    return this.props.events.map( (event, i) => {
       return <TimelineEvent key={i} person={event.person} status={event.status} time={event.timeStamp}/>
     });
-    return eventsData;
   }
   render() {
     const eventsData = this.getEventsData();
